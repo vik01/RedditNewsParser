@@ -1,0 +1,12 @@
+[project]
+name = "redditNewsBot"
+version = "1.0.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "dotenv>=0.9.9",
+    "polars>=1.38.1",
+    "pymongo>=4.16.0",
+    "pyspark>=4.1.1",
+]
