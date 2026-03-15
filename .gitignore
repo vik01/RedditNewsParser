@@ -3,3 +3,10 @@
 
 # Virtual Environments
 .venv/
+
+# Cached Files
+__pycache__/
+
+# Logs
+*.log
+my_logs/
