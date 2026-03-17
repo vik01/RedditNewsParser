@@ -1,6 +1,7 @@
 from dotenv import dotenv_values
 import requests as re
 import unicodedata
+import json
 
 # All environmental variables
 config = dotenv_values("../.env")
@@ -67,7 +68,9 @@ def get_top_headlines(**kwargs):
         for content in HEADLINES_CONTENTS:
             try:
                 if content == "source":
-                    add["source_name"] = __normalize_text(article["source"]["name"])
+                    add["source_name"] = __normalize_text(
+                        article["source"]["name"]
+                    )
                 else:
                     add[content] = __normalize_text(article[content])
             except KeyError:
@@ -112,7 +115,10 @@ if __name__ == "__main__":
         "pageSize": "5"
     }
     print("=== Top Headlines ===")
-    print(get_top_headlines(**headlines_params))
+    test_headlines = get_top_headlines(**headlines_params)
+    print(test_headlines)
+    with open("../data/test_headlines.json", "w") as f:
+        json.dump(test_headlines, f, indent=4)
 
     print("\n=== Sources ===")
     sources_params = {
@@ -120,4 +126,7 @@ if __name__ == "__main__":
         "language": "en",
         "country": "us"
     }
-    print(get_sources(**sources_params))
+    test_sources = get_sources(**sources_params)
+    print(test_sources)
+    with open("../data/test_sources.json", "w") as f:
+        json.dump(test_sources, f, indent=4)
