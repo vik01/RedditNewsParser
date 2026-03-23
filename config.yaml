@@ -54,7 +54,7 @@ newsio:
       - "ch"
       - "cn"
   language: "en"
-  removedduplicates: 1
+  removeduplicate: 1
 
 newsapiorg:
   page_size: 100

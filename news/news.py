@@ -20,7 +20,7 @@ NEWSIO_CATEGORIES = require_list(_newsio, "newsio_categories")
 NEWSIO_COUNTRIES = require_list(_newsio, "newsio_countries")
 NEWSIO_LANGUAGE = require_str(_newsio, "language")
 NEWSIO_SIZE = require_int(_newsio, "size")
-NEWSIO_REMOVEDUPLICATES = require_int(_newsio, "removedduplicates")
+NEWSIO_REMOVEDUPLICATES = require_int(_newsio, "removeduplicate")
 
 # newsapiorg config
 NEWSAPIORG_CATEGORIES = require_list(_newsapiorg, "newsapiorg_categories")

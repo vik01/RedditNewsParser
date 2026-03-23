@@ -2,6 +2,7 @@
 from pathlib import Path
 import requests as re
 import unicodedata
+import json
 
 # Third Party Imports
 from dotenv import dotenv_values
@@ -23,7 +24,7 @@ NEWSIO_CONTENTS = require_list(_news_vars, "newsio_contents")
 UNICODE_REPLACEMENTS = require_dict(_news_vars, "unicode_replacements")
 ENVIRONMENT_PATH = resolve_repo_path(
         project_root, require_str(_environment_path, "environment_path"), ensure_parent=True)
-NEWSIO_ENDPOINT = require_int(_news_io_content, "newsio_endpoint")
+NEWSIO_ENDPOINT = require_str(_news_io_content, "newsio_endpoint")
 
 # All environmental variables
 env_config = dotenv_values(ENVIRONMENT_PATH)
@@ -71,32 +72,45 @@ def get_latest_news(**kwargs):
     if result_json is None:
         print("Error: API call failed")
         return None
+    if result_json.get("status") != "success":
+        print(f"Error: {result_json.get('results', {}).get('message', 'Unknown error')}")
+        return None
     try:
         results = result_json["results"]
     except KeyError:
         print("Error: Key 'results' not found in JSON response")
         return None
+    if not isinstance(results, list):
+        print(f"Error: 'results' is not a list. Got: {type(results)}")
+        return None
     final_result = {}
+    index_int = 0 
     for result in results:
+        if not isinstance(result, dict):
+            continue
         add = {}
         for content in NEWSIO_CONTENTS:
             try:
-                if content != "article_id":
-                    add[content] = __normalize_text(result[content])
+                add[content] = __normalize_text(result[content])
             except KeyError:
                 print(f"Error: Key '{content}' not found in JSON response")
                 add[content] = None
-        final_result[result["article_id"]] = add
+        final_result[index_int] = add
+        index_int += 1
     return final_result
 
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
 
-#     set_params = {
-#         "country": "in",
-#         "language": "en",
-#         "category": "politics",
-#         "removedduplicate": "1",
-#         "size": "10"
-#     }
-#     print(get_latest_news(**set_params))
+    set_params = {
+        "country": "in",
+        "language": "en",
+        "category": "politics",
+        "removeduplicate": "1",
+        "size": "10"
+    }
+    test_res = get_latest_news(**set_params)
+    print(test_res)
+
+    with open(f"{set_params['country']}_{set_params['category']}.json", "w") as f:
+        json.dump(test_res, f, indent=4)
