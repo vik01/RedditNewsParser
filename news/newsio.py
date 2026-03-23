@@ -9,7 +9,7 @@ from dotenv import dotenv_values
 # Local Module Imports
 from news_utils import (load_config, require_section,
                         require_list, require_dict, 
-                        resolve_repo_path, require_str)
+                        resolve_repo_path, require_str, require_int)
 
 project_root = Path(__file__).resolve().parents[1]
 
@@ -17,11 +17,13 @@ project_root = Path(__file__).resolve().parents[1]
 _cfg = load_config(Path(__file__).resolve().parent.parent / "config.yaml")
 _news_vars = require_section(_cfg, "news_vars")
 _environment_path = require_section(_cfg, "environment")
+_news_io_content = require_section(_cfg, "newsio")
 
 NEWSIO_CONTENTS = require_list(_news_vars, "newsio_contents")
 UNICODE_REPLACEMENTS = require_dict(_news_vars, "unicode_replacements")
 ENVIRONMENT_PATH = resolve_repo_path(
         project_root, require_str(_environment_path, "environment_path"), ensure_parent=True)
+NEWSIO_ENDPOINT = require_int(_news_io_content, "newsio_endpoint")
 
 # All environmental variables
 env_config = dotenv_values(ENVIRONMENT_PATH)
@@ -65,7 +67,7 @@ def __make_api_call(endpoint, **kwargs):
 
 
 def get_latest_news(**kwargs):
-    result_json = __make_api_call("latest", **kwargs)
+    result_json = __make_api_call(NEWSIO_ENDPOINT, **kwargs)
     if result_json is None:
         print("Error: API call failed")
         return None
