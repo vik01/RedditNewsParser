@@ -1,24 +1,32 @@
-from dotenv import dotenv_values
+# Standard Library Imports
+from pathlib import Path
 import requests as re
 import unicodedata
 
+# Third Party Imports
+from dotenv import dotenv_values
+
+# Local Module Imports
+from news_utils import (load_config, require_section,
+                        require_list, require_dict, 
+                        resolve_repo_path, require_str)
+
+project_root = Path(__file__).resolve().parents[1]
+
+# Load config variables
+_cfg = load_config(Path(__file__).resolve().parent.parent / "config.yaml")
+_news_vars = require_section(_cfg, "news_vars")
+_environment_path = require_section(_cfg, "environment")
+
+NEWSIO_CONTENTS = require_list(_news_vars, "newsio_contents")
+UNICODE_REPLACEMENTS = require_dict(_news_vars, "unicode_replacements")
+ENVIRONMENT_PATH = resolve_repo_path(
+        project_root, require_str(_environment_path, "environment_path"), ensure_parent=True)
+
 # All environmental variables
-config = dotenv_values("../.env")
-uri = config["NEWSDATAIO_API_URL"]
-__api_key = config["NEWSDATAIO_API_KEY"]
-
-# content variables
-NEWSIO_CONTENTS = ["article_id", "title", "description", "keywords", "country",
-                   "category", "source_name"]
-
-# Replaced unicode characters with their ASCII equivalents
-UNICODE_REPLACEMENTS = {
-    "\u2018": "'", "\u2019": "'",  # left/right single quotes
-    "\u201c": '"', "\u201d": '"',  # left/right double quotes
-    "\u2013": "-", "\u2014": "-",  # en dash, em dash
-    "\u2026": "...",               # ellipsis
-    "\u00a0": " ",                 # non-breaking space
-}
+env_config = dotenv_values(ENVIRONMENT_PATH)
+uri = env_config["NEWSDATAIO_API_URL"]
+__api_key = env_config["NEWSDATAIO_API_KEY"]
 
 
 def __normalize_text(text):

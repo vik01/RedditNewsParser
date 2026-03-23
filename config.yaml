@@ -1,0 +1,40 @@
+news_vars:
+  headlines_contents:
+    - title
+    - description
+    - author
+    - url
+    - publishedAt
+    - source
+    - content
+
+  sources_contents:
+    - id
+    - name
+    - description
+    - url
+    - category
+    - language
+    - country
+
+  newsio_contents:
+    - article_id
+    - title
+    - description
+    - keywords
+    - country
+    - category
+    - source_name
+
+  unicode_replacements:
+    "\u2018": "'"
+    "\u2019": "'"
+    "\u201C": '"'
+    "\u201D": '"'
+    "\u2013": "-"
+    "\u2014": "-"
+    "\u2026": "..."
+    "\u00A0": " "
+
+environment: 
+  environment_path: ".env"
