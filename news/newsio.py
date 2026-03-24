@@ -100,17 +100,17 @@ def get_latest_news(**kwargs):
     return final_result
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    set_params = {
-        "country": "in",
-        "language": "en",
-        "category": "politics",
-        "removeduplicate": "1",
-        "size": "10"
-    }
-    test_res = get_latest_news(**set_params)
-    print(test_res)
+#     set_params = {
+#         "country": "in",
+#         "language": "en",
+#         "category": "politics",
+#         "removeduplicate": "1",
+#         "size": "10"
+#     }
+#     test_res = get_latest_news(**set_params)
+#     print(test_res)
 
-    with open(f"{set_params['country']}_{set_params['category']}.json", "w") as f:
-        json.dump(test_res, f, indent=4)
+#     with open(f"{set_params['country']}_{set_params['category']}.json", "w") as f:
+#         json.dump(test_res, f, indent=4)

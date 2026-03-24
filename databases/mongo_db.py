@@ -1,6 +1,11 @@
 # Standard Library Imports
-from typing import Dict
+import sys
+from typing import Dict, List
 from pathlib import Path
+from contextlib import contextmanager
+
+project_root = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 # Third Party Imports
 from dotenv import dotenv_values
@@ -9,8 +14,6 @@ from pymongo import MongoClient
 # Local Module Imports
 from db_utils import (load_config, require_section,
                       require_str, resolve_repo_path)
-
-project_root = Path(__file__).resolve().parents[1]
 
 # Load config variables
 _cfg = load_config(project_root / "config.yaml")
@@ -39,46 +42,72 @@ class DbAdd:
     def __init__(self):
         pass
 
-    def _connect_db(self):
+    @contextmanager
+    def _connection(self):
         """
-        Connect to MongoDB Atlas and store the database handle
-        in self.database for reuse across insert calls.
+        Context manager that opens a MongoClient, yields the
+        database handle, and guarantees the client is closed
+        even if the caller raises an exception.
         """
         client = MongoClient(MONGODB_CONN_STRING)
-        self.database = client[DATABASE]
+        try:
+            yield client[DATABASE]
+        finally:
+            client.close()
+
+    def _check_duplicates(self, db, collection_name: str,
+                          key_type: str, documents: List[Dict]) -> List[Dict]:
+        """
+        Filter out documents that already exist in the given collection.
+
+        Queries all existing values for key_type, compares against the
+        incoming list, and returns only documents that are new.
+        """
+        collection = db[collection_name]
+        existing_keys = set(
+            doc[key_type]
+            for doc in collection.find({}, {key_type: 1, "_id": 0})
+        )
+        return [doc for doc in documents if doc.get(key_type) not in existing_keys]
 
     def add_news_to_newsio(self, insert_dict: Dict):
         """
         Insert newsio articles into the newsio MongoDB collection.
 
-        Takes the dict returned by get_newsio() and inserts all
-        values as documents via insert_many.
+        Checks for duplicate article_ids before inserting. Only
+        new documents are added via insert_many.
         """
-        if not hasattr(self, "database"):
-            self._connect_db()
-        collection = self.database[NEWSIO_COLLECTION]
-        collection.insert_many(list(insert_dict.values()))
+        with self._connection() as db:
+            documents = list(insert_dict.values())
+            new_documents = self._check_duplicates(
+                db, NEWSIO_COLLECTION, "article_id", documents)
+            if new_documents:
+                db[NEWSIO_COLLECTION].insert_many(new_documents)
 
     def add_news_to_newsapiorg(self, insert_dict: Dict):
         """
         Insert newsapiorg articles into the newsapiorg MongoDB collection.
 
-        Takes the dict returned by get_newsapiorg() and inserts all
-        values as documents via insert_many.
+        Checks for duplicate titles before inserting. Only
+        new documents are added via insert_many.
         """
-        if not hasattr(self, "database"):
-            self._connect_db()
-        collection = self.database[NEWSAPIORG_COLLECTION]
-        collection.insert_many(list(insert_dict.values()))
+        with self._connection() as db:
+            documents = list(insert_dict.values())
+            new_documents = self._check_duplicates(
+                db, NEWSAPIORG_COLLECTION, "title", documents)
+            if new_documents:
+                db[NEWSAPIORG_COLLECTION].insert_many(new_documents)
 
     def add_to_sources(self, insert_dict: Dict):
         """
         Insert news sources into the sources MongoDB collection.
 
-        Takes the dict returned by get_newsapiorg_sources() and inserts
-        all values as documents via insert_many.
+        Checks for duplicate names before inserting. Only
+        new documents are added via insert_many.
         """
-        if not hasattr(self, "database"):
-            self._connect_db()
-        collection = self.database[SOURCES_COLLECTION]
-        collection.insert_many(list(insert_dict.values()))
+        with self._connection() as db:
+            documents = list(insert_dict.values())
+            new_documents = self._check_duplicates(
+                db, SOURCES_COLLECTION, "name", documents)
+            if new_documents:
+                db[SOURCES_COLLECTION].insert_many(new_documents)

@@ -1,13 +1,16 @@
 # Standard Library Imports
+import sys
 from pathlib import Path
+
+project_root = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(project_root))
 
 # Local Module Imports
 from news_utils import (load_config, require_section,
                         require_list, require_int, require_str)
 from newsio import get_latest_news
 from newsapiorg import get_top_headlines, get_sources
-
-project_root = Path(__file__).resolve().parents[1]
+from databases.mongo_db import DbAdd
 
 # Load config variables
 _cfg = load_config(project_root / "config.yaml")
@@ -38,10 +41,11 @@ def get_newsio():
     Fetch latest news articles from the NewsData.io API for every
     country/category combination defined in config.yaml.
 
-    Returns a dict keyed by article_id. Stops early and returns
-    partial results if any API call fails (returns None).
+    Each successful API response is pushed directly to MongoDB
+    via DbAdd. Skips any country/category combo where the API
+    call returns None.
     """
-    all_results = {}
+    database = DbAdd()
     for country in NEWSIO_COUNTRIES:
         for category in NEWSIO_CATEGORIES:
             params = {
@@ -53,9 +57,8 @@ def get_newsio():
             }
             result = get_latest_news(**params)
             if result is None:
-                return all_results
-            all_results.update(result)
-    return all_results
+                continue
+            database.add_news_to_newsio(result)
 
 
 def get_newsapiorg():
@@ -63,12 +66,11 @@ def get_newsapiorg():
     Fetch top headlines from the NewsAPI.org API for every
     country/category combination defined in config.yaml.
 
-    Returns a dict keyed by a running integer offset to avoid
-    key collisions across calls. Stops early and returns partial
-    results if any API call fails (returns None).
+    Each successful API response is pushed directly to MongoDB
+    via DbAdd. Skips any country/category combo where the API
+    call returns None.
     """
-    all_results = {}
-    offset = 0
+    database = DbAdd()
     for country in NEWSAPIORG_COUNTRIES:
         for category in NEWSAPIORG_CATEGORIES:
             params = {
@@ -78,11 +80,8 @@ def get_newsapiorg():
             }
             result = get_top_headlines(**params)
             if result is None:
-                return all_results
-            for article in result.values():
-                all_results[offset] = article
-                offset += 1
-    return all_results
+                continue
+            database.add_news_to_newsapiorg(result)
 
 
 def get_newsapiorg_sources():
@@ -90,11 +89,11 @@ def get_newsapiorg_sources():
     Fetch news sources from the NewsAPI.org API for every
     country/category combination defined in config.yaml.
 
-    Returns a dict keyed by source ID (e.g. "abc-news"). Stops
-    early and returns partial results if any API call fails
-    (returns None).
+    Each successful API response is pushed directly to MongoDB
+    via DbAdd. Skips any country/category combo where the API
+    call returns None.
     """
-    all_results = {}
+    database = DbAdd()
     for country in SOURCE_COUNTRIES:
         for category in SOURCE_CATEGORIES:
             params = {
@@ -104,6 +103,10 @@ def get_newsapiorg_sources():
             }
             result = get_sources(**params)
             if result is None:
-                return all_results
-            all_results.update(result)
-    return all_results
+                continue
+            database.add_to_sources(result)
+
+if __name__ == "__main__":
+    get_newsapiorg_sources()
+    get_newsapiorg()
+    get_newsio()
