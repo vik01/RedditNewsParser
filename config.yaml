@@ -1,0 +1,109 @@
+news_vars:
+  headlines_contents:
+    - "title"
+    - "description"
+    - "author"
+    - "url"
+    - "publishedAt"
+    - "source"
+    - "content"
+  sources_contents:
+    - "id"
+    - "name"
+    - "description"
+    - "category"
+    - "language"
+    - "country"
+  newsio_contents:
+    - "article_id"
+    - "title"
+    - "description"
+    - "keywords"
+    - "country"
+    - "category"
+    - "source_name"
+    - "source_url"
+  unicode_replacements:
+    "\u2018": "'"
+    "\u2019": "'"
+    "\u201C": '"'
+    "\u201D": '"'
+    "\u2013": "-"
+    "\u2014": "-"
+    "\u2026": "..."
+    "\u00A0": " "
+
+environment: 
+  environment_path: ".env"
+
+newsio:
+  newsio_endpoint: "latest"
+  size: 10
+  newsio_categories: 
+    - "politics"
+    - "technology"
+    - "sports"
+    - "science"
+  newsio_countries:
+      - "us"
+      - "ca"
+      - "es"
+      - "co"
+      - "mx"
+      - "in"
+      - "ch"
+      - "cn"
+  language: "en"
+  removeduplicate: 1
+
+newsapiorg:
+  page_size: 100
+  language: "en"
+  newsapiorg_categories:
+    - "business"
+    - "health"
+    - "entertainment"
+  newsapiorg_countries:
+      - "us"
+      - "ca"
+      - "es"
+      - "co"
+      - "mx"
+      - "in"
+      - "ch"
+      - "cn"
+
+newsapiorg_sources:
+  language: "en"
+  source_categories:
+    - "business"
+    - "health"
+    - "entertainment"
+  source_countries:
+      - "us"
+      - "ca"
+      - "co"
+      - "mx"
+      - "in"
+      - "ch"
+      - "cn"
+
+country_longforms:
+  country_dict: 
+    "us": "United States of America"
+    "ca": "Canada"
+    "es": "Spain"
+    "co": "Colombia"
+    "mx": "Mexico"
+    "in": "India"
+    "ch": "Switzerland" 
+    "cn": "China"
+
+atlas_mongo:
+  cluster: "mdacluster"
+  database: "News"
+  newsio_collection: "newsio"
+  newsapiorg_collection: "newsapiorg"
+  newsio_sources_collection: "sources"
+ 
+

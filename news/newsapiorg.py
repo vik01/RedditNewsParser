@@ -1,29 +1,35 @@
-from dotenv import dotenv_values
+# Standard Library Imports
+from pathlib import Path
 import requests as re
 import unicodedata
 import json
 
+# Third Party Imports
+from dotenv import dotenv_values
+
+# Local Module Imports
+from news_utils import (load_config, require_section,
+                        require_list, require_dict, 
+                        resolve_repo_path, require_str)
+
+project_root = Path(__file__).resolve().parents[1]
+
+# Load config variables
+_cfg = load_config(Path(__file__).resolve().parent.parent / "config.yaml")
+_news_vars = require_section(_cfg, "news_vars")
+_environment_path = require_section(_cfg, "environment")
+
+HEADLINES_CONTENTS = require_list(_news_vars, "headlines_contents")
+SOURCES_CONTENTS = require_list(_news_vars, "sources_contents")
+UNICODE_REPLACEMENTS = require_dict(_news_vars, "unicode_replacements")
+ENVIRONMENT_PATH = resolve_repo_path(
+        project_root, require_str(_environment_path, "environment_path"), ensure_parent=True)
+
 # All environmental variables
-config = dotenv_values("../.env")
-top_headlines_uri = config["NEWSAPIORG_TOP_HEADLINES_URL"]
-sources_uri = config["NEWSAPIORG_SOURCES_URL"]
-__api_key = config["NEWSAPIORG_API_KEY"]
-
-# content variables
-HEADLINES_CONTENTS = ["title", "description", "author", "url",
-                      "publishedAt", "source", "content"]
-
-SOURCES_CONTENTS = ["id", "name", "description", "url",
-                    "category", "language", "country"]
-
-# Replaced unicode characters with their ASCII equivalents
-UNICODE_REPLACEMENTS = {
-    "\u2018": "'", "\u2019": "'",  # left/right single quotes
-    "\u201c": '"', "\u201d": '"',  # left/right double quotes
-    "\u2013": "-", "\u2014": "-",  # en dash, em dash
-    "\u2026": "...",               # ellipsis
-    "\u00a0": " ",                 # non-breaking space
-}
+env_config = dotenv_values(ENVIRONMENT_PATH)
+top_headlines_uri = env_config["NEWSAPIORG_TOP_HEADLINES_URL"]
+sources_uri = env_config["NEWSAPIORG_SOURCES_URL"]
+__api_key = env_config["NEWSAPIORG_API_KEY"]
 
 
 def __normalize_text(text):

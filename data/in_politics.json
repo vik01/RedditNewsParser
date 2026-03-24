@@ -1,421 +1,219 @@
 {
-    "status": "success",
-    "totalResults": 3450,
-    "results": [
-        {
-            "article_id": "7418fb622852c1f77442c2c4b3e3e37a",
-            "link": "https://www.latestly.com/uk/rangrez-restaurant-controversy-indian-sikh-business-owner-harman-singh-kapoor-arrested-days-after-closing-uk-eatery-over-refusal-to-serve-halal-meat-7354635.html",
-            "title": "Rangrez Restaurant Controversy: Indian Sikh Business Owner Harman Singh Kapoor Arrested Days After Closing UK Eatery Over Refusal To Serve Halal Meat",
-            "description": "Indian-origin Sikh restaurateur Harman Singh Kapoor was arrested in London shortly after closing his Rangrez restaurant due to years of alleged extremist harassment, death threats and refusal to serve halal meat. While the exact charges remain unclear, the arrest has sparked outrage among supporters who claim Kapoor is being victimised for his outspoken social views.",
-            "content": "ONLY AVAILABLE IN PAID PLANS",
-            "keywords": [
-                "indian",
-                "halal",
-                "rangrez restaurant controversy",
-                "fulham palace road",
-                "london",
-                "harman singh kapoor",
-                "sikh",
-                "halal meat",
-                "uk",
-                "viral video",
-                "rangrez",
-                "london police"
-            ],
-            "creator": [
-                "team latestly"
-            ],
-            "language": "english",
-            "country": [
-                "india"
-            ],
-            "category": [
-                "politics",
-                "top"
-            ],
-            "datatype": "news",
-            "pubDate": "2026-03-15 06:04:47",
-            "pubDateTZ": "UTC",
-            "fetched_at": "2026-03-15 06:36:38",
-            "image_url": "https://st1.latestly.com/wp-content/uploads/2026/03/Rangrez.jpg",
-            "video_url": null,
-            "source_id": "latestly",
-            "source_name": "Latestly",
-            "source_priority": 31923,
-            "source_url": "https://www.latestly.com",
-            "source_icon": "https://n.bytvi.com/latestly.png",
-            "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
-            "duplicate": false
-        },
-        {
-            "article_id": "212c004e6236d2237020229f5011eb36",
-            "link": "https://www.business-standard.com/industry/news/rajya-sabha-panel-examining-cci-commitment-regulations-126031500187_1.html",
-            "title": "House panel on subordinate legislation examining CCI commitment regulations",
-            "description": "Rajya Sabha panel on subordinate legislation has begun examining the Competition Commission of India's commitment regulations that allow firms to avoid abuse of dominance investigations",
-            "content": "ONLY AVAILABLE IN PAID PLANS",
-            "keywords": [
-                "cci commitment regulations",
-                "milind deora committee cci rules",
-                "competition amendment act 2023 settlement rules",
-                "competition act commitment mechanism",
-                "mca cci regulation review",
-                "cci abuse of dominance commitments",
-                "rajya sabha committee subordinate legislation"
-            ],
-            "creator": [
-                "business standard"
-            ],
-            "language": "english",
-            "country": [
-                "india"
-            ],
-            "category": [
-                "politics",
-                "top"
-            ],
-            "datatype": "news",
-            "pubDate": "2026-03-15 06:04:43",
-            "pubDateTZ": "UTC",
-            "fetched_at": "2026-03-15 07:59:39",
-            "image_url": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-06/24/thumb/featurecrop/1200X630/1719204901-0503.jpg",
-            "video_url": null,
-            "source_id": "business-standard",
-            "source_name": "Business Standard",
-            "source_priority": 9158,
-            "source_url": "https://www.business-standard.com",
-            "source_icon": "https://n.bytvi.com/business-standard.png",
-            "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
-            "duplicate": false
-        },
-        {
-            "article_id": "f70ebac2575a7122ac545a27c68e8273",
-            "link": "https://www.latestly.com/agency-news/india-news-mps-delhi-police-go-head-to-head-in-tb-mukt-bharat-t20-match-in-national-capital-7354645.html",
-            "title": "India News | MPs, Delhi Police Go Head-to-head in 'TB Mukt Bharat' T20 Match in National Capital",
-            "description": "Get latest articles and stories on India at LatestLY. Members of Parliament (MPs) and personnel of the Delhi Police faced off in a friendly T20 cricket match in the national capital as part of the 'TB Mukt Bharat' awareness campaign, aimed at promoting the government's initiative to eliminate tuberculosis in India.",
-            "content": "ONLY AVAILABLE IN PAID PLANS",
-            "keywords": null,
-            "creator": [
-                "ani"
-            ],
-            "language": "english",
-            "country": [
-                "india"
-            ],
-            "category": [
-                "politics",
-                "top",
-                "sports"
-            ],
-            "datatype": "news",
-            "pubDate": "2026-03-15 06:04:36",
-            "pubDateTZ": "UTC",
-            "fetched_at": "2026-03-15 06:36:40",
-            "image_url": "https://st1.latestly.com/wp-content/uploads/2026/03/ANI-20260315055552.jpg",
-            "video_url": null,
-            "source_id": "latestly",
-            "source_name": "Latestly",
-            "source_priority": 31923,
-            "source_url": "https://www.latestly.com",
-            "source_icon": "https://n.bytvi.com/latestly.png",
-            "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
-            "duplicate": false
-        },
-        {
-            "article_id": "a2dd87189a10571f6a97967a72dd2334",
-            "link": "https://zeenews.india.com/india/election-commission-likely-to-announce-election-schedule-in-five-poll-bound-states-today-3026890.html",
-            "title": "Election Commission likely to announce election schedule in poll-bound states/UT today",
-            "description": "The Election Commission of India will hold a press conference, in which the EC will likely to announce the election date for four states, including Assam, West Bengal, Kerala, and Tamil Nadu, and one Union Territory, Puducherry.",
-            "content": "ONLY AVAILABLE IN PAID PLANS",
-            "keywords": null,
-            "creator": [
-                "zee news"
-            ],
-            "language": "english",
-            "country": [
-                "india"
-            ],
-            "category": [
-                "politics",
-                "top"
-            ],
-            "datatype": "news",
-            "pubDate": "2026-03-15 06:04:22",
-            "pubDateTZ": "UTC",
-            "fetched_at": "2026-03-15 06:04:22",
-            "image_url": null,
-            "video_url": null,
-            "source_id": "zeenews",
-            "source_name": "Zee News",
-            "source_priority": 2369,
-            "source_url": "http://zeenews.india.com",
-            "source_icon": "https://n.bytvi.com/zeenews.png",
-            "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
-            "duplicate": false
-        },
-        {
-            "article_id": "6322ff4f7b72df9efe93e6af34614aab",
-            "link": "https://www.moneycontrol.com/news/business/us-launches-forced-labour-probe-across-60-economies-india-exports-may-face-scrutiny-gtri-13860708.html",
-            "title": "US launches forced labour probe across 60 economies; India exports may face scrutiny: GTRI",
-            "description": "GTRI said India could face scrutiny even though forced labour is prohibited under the Bonded Labour System (Abolition) Act, 1976, because several export sectors depend heavily on imported Chinese components.",
-            "content": "ONLY AVAILABLE IN PAID PLANS",
-            "keywords": [
-                "gtri"
-            ],
-            "creator": [
-                "moneycontrol news"
-            ],
-            "language": "english",
-            "country": [
-                "india"
-            ],
-            "category": [
-                "politics",
-                "top"
-            ],
-            "datatype": "news",
-            "pubDate": "2026-03-15 06:04:18",
-            "pubDateTZ": "UTC",
-            "fetched_at": "2026-03-15 07:31:17",
-            "image_url": "https://images.moneycontrol.com/static-mcnews/2026/02/20260221030309_US.jpg",
-            "video_url": null,
-            "source_id": "moneycontrol",
-            "source_name": "Moneycontrol",
-            "source_priority": 2087,
-            "source_url": "https://www.moneycontrol.com",
-            "source_icon": "https://n.bytvi.com/moneycontrol.png",
-            "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
-            "duplicate": false
-        },
-        {
-            "article_id": "ec544ae7111e70df1767ec82fbea4d10",
-            "link": "https://pragativadi.com/election-commission-to-announce-assembly-poll-schedule-for-five-states-today-at-4-pm/",
-            "title": "Election Commission to Announce Assembly Poll Schedule for Five States Today at 4 PM",
-            "description": "The Election Commission of India (ECI) is set to announce the schedule for the upcoming Assembly elections in five states and one union territory on Sunday. The poll body has scheduled a press conference at 4 PM where officials will unveil the complete timeline for elections in West Bengal, Kerala, Tamil Nadu, Assam, and the [...]The post Election Commission to Announce Assembly Poll Schedule for Five States Today at 4 PM appeared first on Pragativadi I Latest Odisha News in English I Breaking News .",
-            "content": "ONLY AVAILABLE IN PAID PLANS",
-            "keywords": [
-                "west bengal elections",
-                "assembly elections 2026",
-                "trending now",
-                "assam elections",
-                "election schedule announcement",
-                "kerala elections",
-                "national",
-                "tamil nadu elections",
-                "election commission of india",
-                "puducherry elections",
-                "indian politics",
-                "eci press conference"
-            ],
-            "creator": [
-                "ananya pattnaik"
-            ],
-            "language": "english",
-            "country": [
-                "india"
-            ],
-            "category": [
-                "politics",
-                "top"
-            ],
-            "datatype": "news",
-            "pubDate": "2026-03-15 06:02:14",
-            "pubDateTZ": "UTC",
-            "fetched_at": "2026-03-15 06:13:23",
-            "image_url": "https://pragativadi.com/wp-content/uploads/2026/03/Election-Commission-to-Announce-Assembly-Poll-Schedule-for-Five-States-Today-at-4-PM-516x375.jpg",
-            "video_url": null,
-            "source_id": "pragativadi",
-            "source_name": "Pragativadi",
-            "source_priority": 341662,
-            "source_url": "https://pragativadi.com",
-            "source_icon": "https://n.bytvi.com/pragativadi.jpg",
-            "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
-            "duplicate": false
-        },
-        {
-            "article_id": "81eef6d8e7305c77340b12a5018a8166",
-            "link": "https://economictimes.indiatimes.com/news/international/world-news/us-security-umbrella-is-full-of-holes-iran-fm-urges-neighbours-to-expel-foreign-aggressors/videoshow/129585481.cms",
-            "title": "'US security umbrella is full of holes...': Iran FM urges neighbours to expel foreign \u2018aggressors\u2019",
-            "description": "Iran's Foreign Minister Seyed Abbas Araghchi on Saturday criticised the United States' regional security role, saying Washington's security umbrella has failed to protect countries in West Asia. In a post on X, Araghchi said, \"Touted US security umbrella has proven to be full of holes and inviting rather than deterring trouble.\"",
-            "content": "ONLY AVAILABLE IN PAID PLANS",
-            "keywords": [
-                "iran strait of hormuz closure,strait of hormuz,strait of hormuz oil shipping crisis,iran irgc strait of hormuz warning,middle east shipping tensions,iran us conflict hormuz strait,strait of hormuz oil route disruption,seyed abbas araghchi slams trump,iran foreign minister on us,us security umbrella"
-            ],
-            "creator": [
-                "economic times"
-            ],
-            "language": "english",
-            "country": [
-                "india"
-            ],
-            "category": [
-                "politics",
-                "top"
-            ],
-            "datatype": "news",
-            "pubDate": "2026-03-15 06:01:31",
-            "pubDateTZ": "UTC",
-            "fetched_at": "2026-03-15 06:32:35",
-            "image_url": "https://img.etimg.com/thumb/msid-129585481,width-1200,height-900,overlay-economictimes/news/international/world-news/us-security-umbrella-is-full-of-holes-iran-fm-urges-neighbours-to-expel-foreign-aggressors.jpg",
-            "video_url": null,
-            "source_id": "economictimes_indiatimes",
-            "source_name": "The Economic Times",
-            "source_priority": 231,
-            "source_url": "https://economictimes.indiatimes.com",
-            "source_icon": "https://n.bytvi.com/economictimes_indiatimes.png",
-            "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
-            "duplicate": false
-        },
-        {
-            "article_id": "7518109d190e3f3c821cfe7a0d92fe1a",
-            "link": "https://www.news18.com/india/election-dates-2026-announcement-today-live-eci-to-hold-press-conference-at-4-pm-poll-schedule-assam-west-bengal-tamil-nadu-kerala-puducherry-liveblog-9961314.html",
-            "title": "Election Dates 2026 Announcement Today LIVE: EC To Announce Assembly Poll Dates, Press Conference At 4 PM",
-            "description": "Election Dates 2026 Announcement Today LIVE: Elections to the Assemblies of Assam, Tamil Nadu, Puducherry, Kerala and West Bengal are scheduled to be held this year.",
-            "content": "ONLY AVAILABLE IN PAID PLANS",
-            "keywords": [
-                "elections"
-            ],
-            "creator": [
-                "devanshe pandey"
-            ],
-            "language": "english",
-            "country": [
-                "india"
-            ],
-            "category": [
-                "politics"
-            ],
-            "datatype": "news",
-            "pubDate": "2026-03-15 06:01:14",
-            "pubDateTZ": "UTC",
-            "fetched_at": "2026-03-15 06:02:18",
-            "image_url": "https://images.news18.com/ibnlive/uploads/2025/08/Untitled-design-2025-08-17T165418.547-2025-08-44ff470da11eb36187b9c69e41d9679e-3x2.jpg",
-            "video_url": null,
-            "source_id": "news18",
-            "source_name": "News 18",
-            "source_priority": 1063,
-            "source_url": "https://www.news18.com",
-            "source_icon": "https://n.bytvi.com/news18.png",
-            "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
-            "duplicate": false
-        },
-        {
-            "article_id": "3daadb67d0cca7ec47ecfa8a364288b0",
-            "link": "https://www.sentinelassam.com/north-east-india-news/meghalaya-news/meghalaya-ampareen-lyngdoh-says-sixth-schedule-issues-must-be-taken-up-by-respective-adcs",
-            "title": "Meghalaya: Ampareen Lyngdoh says sixth schedule issues must be taken up by respective ADCs",
-            "description": "Senior National People's Party (NPP) leader and East Shillong legislator M Ampareen Lyngdoh said that matters relating to provisions under the Sixth Schedule of the Constitution of India should be addressed by the respective ADCs",
-            "content": "ONLY AVAILABLE IN PAID PLANS",
-            "keywords": [
-                "meghalaya news"
-            ],
-            "creator": [
-                "sentinel digital desk"
-            ],
-            "language": "english",
-            "country": [
-                "india"
-            ],
-            "category": [
-                "politics",
-                "top"
-            ],
-            "datatype": "news",
-            "pubDate": "2026-03-15 06:01:00",
-            "pubDateTZ": "UTC",
-            "fetched_at": "2026-03-15 07:11:38",
-            "image_url": "https://media.assettype.com/sentinelassam-english%2F2025-04-09%2Fcsv53wzg%2Fampareen-lyngdoh.jpg?auto=format%2Ccompress&fit=max&w=480",
-            "video_url": null,
-            "source_id": "sentinel",
-            "source_name": "The Sentinel",
-            "source_priority": 197021,
-            "source_url": "https://www.sentinelassam.com",
-            "source_icon": "https://n.bytvi.com/sentinel.jpg",
-            "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
-            "duplicate": false
-        },
-        {
-            "article_id": "0b1b54ab4aab84a746ad3184b8602681",
-            "link": "https://newsable.asianetnews.com/india/jairam-ramesh-slams-govt-over-chabahar-ports-missing-budget-funds-articleshow-3s50h27",
-            "title": "Jairam Ramesh slams govt over Chabahar Port's missing budget funds",
-            "description": "Congress leader Jairam Ramesh has criticised the Modi government for repackaging the UPA's Chabahar Port project and questioned the absence of a budget allocation for 2026-27, terming it a strategic setback for India's foreign policy.",
-            "content": "ONLY AVAILABLE IN PAID PLANS",
-            "keywords": [
-                "india"
-            ],
-            "creator": [
-                "asianet news central"
-            ],
-            "language": "english",
-            "country": [
-                "india"
-            ],
-            "category": [
-                "politics",
-                "top"
-            ],
-            "datatype": "news",
-            "pubDate": "2026-03-15 06:00:44",
-            "pubDateTZ": "UTC",
-            "fetched_at": "2026-03-15 06:03:04",
-            "image_url": "https://static.asianetnews.com/images/w-1280,h-720,format-jpg,imgid-external,imgname-image-31da78e1-d309-44f9-a6b5-3c8e63a4db60.jpg",
-            "video_url": null,
-            "source_id": "newsable_asianetnews",
-            "source_name": "Asianet Newsable",
-            "source_priority": 7749,
-            "source_url": "https://newsable.asianetnews.com",
-            "source_icon": "https://n.bytvi.com/newsable_asianetnews.jpg",
-            "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
-            "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
-            "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
-            "duplicate": false
-        }
-    ],
-    "nextPage": "1773554444416675501"
+    "0": {
+        "article_id": "428552b6c2daeae2312a4716b18020ac",
+        "title": "Impact of Middle East Conflict on India's Economy: A Looming Crisis",
+        "description": "The ongoing conflict in the Middle East, particularly involving Iran, poses a significant threat to India's economy, which has been one of the fastest-growing globally. With a heavy reliance on oil and gas imports from the region, rising energy prices could lead to increased inflation and reduced economic activity. Moody's Analytics warns of a potential 4% drop in output if the conflict persists. As India grapples with these challenges, the implications for trade, remittances, and overall economic stability are profound. This article delves into the current economic landscape and the risks posed by the escalating situation.",
+        "keywords": [
+            "business/finance",
+            "iran conflict",
+            "india economy",
+            "economic growth",
+            "market",
+            "moody's analytics",
+            "energy prices"
+        ],
+        "country": [
+            "india"
+        ],
+        "category": [
+            "politics",
+            "top"
+        ],
+        "source_name": "Gyanhigyan",
+        "source_url": "https://gyanhigyan.com"
+    },
+    "1": {
+        "article_id": "989a45eedc1ae4d0df5236d6e1d375e2",
+        "title": "Election Commission of India (ECI) mandates assured voter facilities, assistance at polling stations",
+        "description": "The Election Commission of India (ECI) on Sunday announced that assured minimum facilities and comprehensive voter assistance will be provided at all polling stations for the upcoming Assembly elections in five states and one Union Territory.",
+        "keywords": [
+            "voter assistance",
+            "election commission of india",
+            "polling stations"
+        ],
+        "country": [
+            "india"
+        ],
+        "category": [
+            "politics",
+            "top"
+        ],
+        "source_name": "The Sentinel",
+        "source_url": "https://www.sentinelassam.com"
+    },
+    "2": {
+        "article_id": "3fb09e7c8a1f4758a2adcf892f92e1a9",
+        "title": "KERALA HIGH COURT",
+        "description": "The Kerala High Court disqualified Vellapally Natesan, Thushar Vellappally, M N Soman and Santhosh from the organisation's Board of Directors.",
+        "keywords": [
+            "sndp yogam",
+            "english news live",
+            "vellapally natesan",
+            "english news today",
+            "today breaking news in english",
+            "latest english news today",
+            "english top headlines"
+        ],
+        "country": [
+            "india"
+        ],
+        "category": [
+            "politics"
+        ],
+        "source_name": "Etv Bharat",
+        "source_url": "https://www.etvbharat.com"
+    },
+    "3": {
+        "article_id": "1100eaeb693f2d1be7fe8c3df3daba4f",
+        "title": "'Very Concerning': PM Modi Flags West Asia Crisis In Parliament, Warns Of Risks To India",
+        "description": "'Very Concerning': PM Modi Flags West Asia Crisis In Parliament, Warns Of Risks To India",
+        "keywords": [
+            "modi statement west asia",
+            "modi",
+            "narendra modi west asia conflict",
+            "india foreign policy west asia",
+            "india west asia tensions",
+            "parliament budget session live",
+            "oil supply concerns india",
+            "geopolitical tensions impact india",
+            "west asia crisis",
+            "parliament speech modi",
+            "india energy security crisis"
+        ],
+        "country": [
+            "india"
+        ],
+        "category": [
+            "politics",
+            "top"
+        ],
+        "source_name": "Abp News",
+        "source_url": "http://abplive.com"
+    },
+    "4": {
+        "article_id": "8604cadac5e6e0ca485e12cb27dfbf2f",
+        "title": "Election Commission Issues Digital Vouchers To Political Parties For Free Broadcast For Assembly Polls In Different States",
+        "description": "The digital time vouchers have been issued to all the recognised National and State Political Parties across 5 poll-bound States/UT for the Legislative Assembly elections.",
+        "keywords": [
+            "digital vouchers",
+            "english news online",
+            "english news live",
+            "news in english",
+            "english news today",
+            "election commission",
+            "free broadcast for assembly polls",
+            "latest english news",
+            "assembly polls"
+        ],
+        "country": [
+            "india"
+        ],
+        "category": [
+            "politics"
+        ],
+        "source_name": "Etv Bharat",
+        "source_url": "https://www.etvbharat.com"
+    },
+    "5": {
+        "article_id": "8ad4a08dd6d0cc1b405d24775cda2b21",
+        "title": "Challenges posed by West Asia crisis have economic, national security and humanitarian aspects: PM Modi.",
+        "description": "Challenges posed by West Asia crisis have economic, national security and humanitarian aspects: PM Modi. Challenges posed by West Asia crisis have economic, national security and humanitarian aspects: PM Modi.",
+        "keywords": [
+            "challenges",
+            "cooperation",
+            "international",
+            "economic",
+            "crisis",
+            "humanitarian",
+            "risk",
+            "national security",
+            "west asia",
+            "pm modi"
+        ],
+        "country": [
+            "india"
+        ],
+        "category": [
+            "politics",
+            "top"
+        ],
+        "source_name": "Devdiscourse",
+        "source_url": "https://www.devdiscourse.com"
+    },
+    "6": {
+        "article_id": "7d01eb989e9c31daf69fae4c75b6fb2e",
+        "title": "'West Asia crisis worrisome': PM Modi flags economic, security risks; 1 crore Indians in region",
+        "description": "Prime Minister Narendra Modi addressed the Lok Sabha regarding the West Asia crisis. He stated the situation is worrisome and impacts the global economy and civilian lives. The crisis also carries serious national security implications for India. Nearly one crore Indians live and work in the region. The government is ensuring their safety and providing necessary assistance.",
+        "keywords": [
+            "oil crisis india",
+            "lpg crisis",
+            "strait of hormuz",
+            "india national security",
+            "west asia war impact in india",
+            "pm modi lok sabha speech",
+            "government assistance for indians abroad",
+            "west asia crisis",
+            "us-israel iran war",
+            "india foreign relations"
+        ],
+        "country": [
+            "india"
+        ],
+        "category": [
+            "politics",
+            "top"
+        ],
+        "source_name": "The Economic Times",
+        "source_url": "https://economictimes.indiatimes.com"
+    },
+    "7": {
+        "article_id": "e40ec18778888a9457f9e634ee4f4824",
+        "title": "Disqualification row: High Court issues notices to Telangana MLA, Legislature Secretary",
+        "description": "Telangana High Court on Monday directed MLA Danam Nagender and Telangana Legislature Secretary to file counters to the petition of BJP Legislative Party leader Alleti Maheshwar Reddy, challenging the order passed by the Assembly Speaker dismissing his disqualification petition against Nagender.",
+        "keywords": [
+            "issues",
+            "high",
+            "court"
+        ],
+        "country": [
+            "india"
+        ],
+        "category": [
+            "politics",
+            "top"
+        ],
+        "source_name": "The Munsif Daily",
+        "source_url": "https://munsifdaily.com"
+    },
+    "8": {
+        "article_id": "367ed475df7b62c4d3b769d8382dca56",
+        "title": "World News | Surge in Foreign Tourists Visiting Afghanistan in 2025",
+        "description": "Get latest articles and stories on World at LatestLY. Afghanistan has seen a notable rise in foreign tourists during the year 1404 of the solar calendar (corresponding to 2025), as visitors from across the world explored its historical and cultural heritage, according to a report by Tolonews.",
+        "keywords": null,
+        "country": [
+            "india"
+        ],
+        "category": [
+            "politics",
+            "top"
+        ],
+        "source_name": "Latestly",
+        "source_url": "https://www.latestly.com"
+    },
+    "9": {
+        "article_id": "2c75ae456edb01bbe5cd531ebc1fe4fa",
+        "title": "Activists oppose transgender law changes, warn of rights rollback",
+        "description": "Daijiworld Media Network - New Delhi New Delhi, Mar 23: As Parliament prepares to take up amendments to the Transgender Persons (Protection of Rights) Act, 2019, transgender rights activists have voiced strong opposition, warning that the proposed changes could dilute key protections and....",
+        "keywords": null,
+        "country": [
+            "india"
+        ],
+        "category": [
+            "top",
+            "politics",
+            "lifestyle"
+        ],
+        "source_name": "Daijiworld",
+        "source_url": "https://www.daijiworld.com"
+    }
 }
