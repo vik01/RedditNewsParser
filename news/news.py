@@ -142,7 +142,7 @@ def run_summaries():
         # Newsio categories
         for category in NEWSIO_CATEGORIES:
             newsio_articles = db.get_newsio_by_country_category(
-                country_long, category)
+                country_long.lower(), category)
             if not newsio_articles:
                 continue
             summary = summarize_group(
