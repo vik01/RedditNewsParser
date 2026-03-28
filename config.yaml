@@ -105,5 +105,10 @@ atlas_mongo:
   newsio_collection: "newsio"
   newsapiorg_collection: "newsapiorg"
   newsio_sources_collection: "sources"
- 
 
+neo4j:
+  database: "22c1b1b1"
+
+openrouter:
+  model: "stepfun/step-3.5-flash:free"
+  max_tokens: 1500
