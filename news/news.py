@@ -170,9 +170,9 @@ def run_summaries():
 
 if __name__ == "__main__":
     # Phase 1: Fetch news and store in MongoDB
-    # get_newsapiorg_sources()
-    # get_newsapiorg()
-    # get_newsio()
+    get_newsapiorg_sources()
+    get_newsapiorg()
+    get_newsio()
 
     # Phase 2: Summarize per country/category
     run_summaries()
